@@ -1,6 +1,8 @@
 # Project-Blog
 
-<p>This will be my personal Blog, and you can use it(ig).</p> 
+<p>This will be my personal Blog, and you can use it(ig).</p>
+
+<p>Till not decided will i be keeping my domain name or blog name, I only decided it's gonna be <b>IAmHeroForFun</b>, but will it related to my contact?. I am thinking like i will make seperate tags like, personal life, Tech, Adventure, Etc.</p>
 
 ### Todo
 - [x] **Plan** Wil be updated as i learn and make.
