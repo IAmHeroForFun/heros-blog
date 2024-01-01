@@ -5,7 +5,7 @@ from django.views import generic
 from django.template import loader
 
 def home(request):
-    return render(request, 'base.html')
+    return render(request, 'index.html')
 
 def contact(request):
     return render(request, 'home/contact.html')
