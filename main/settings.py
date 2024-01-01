@@ -41,8 +41,33 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     'bootstrap5', # package
-    'home', # local
+    'ckeditor', # writer package
+    'ckeditor_uploader', 
+    'home', # local 
+    'post', # local for posts 
 ]
+
+# CKEDITOR
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'Custom',
+        'toolbar_custom': [
+            ['Bold', 'Italic', 'Underline', 'Strike'],
+            ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent'],
+            ['Link', 'Unlint'],
+            ['RemoveFormat', 'Source'],
+            ['Image', 'Link', 'UploadImage'],
+        ],
+        'width': 700,
+        'height': 300,
+        'extraPlugins': 'uploadimage',
+        'uploadUrl': '/ckeditor/upload/',
+        'removePlugins': 'stylesheetparser',
+    },
+}
+CKEDITOR_UPLOAD_PATH = 'uploads/'
+CKEDITOR_BROWSER_SHOW_DIRS = True 
+CKEDITOR_RESTRICT_BY_USER = True 
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -119,6 +144,10 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = [BASE_DIR, 'media']
+
 
 STATIC_URL = "static/"
 STATICFILES_DIRS = [BASE_DIR, 'static']
