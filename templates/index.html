@@ -1,14 +1,9 @@
-{% load bootstrap5 %}
-{% load static %}
-{% bootstrap_css %}
-{% bootstrap_javascript %}
-{% block head %}
+{% extends "base.html" %}
 
-{% endblock head %}
 {%block title%}
-
+HOME PAGE
 {% endblock title %}
-{% block content %}
-{% include "navbar.html" %}
 
+{% block content %}
+<h1>HOME PAGE</h1>
 {% endblock content %}
