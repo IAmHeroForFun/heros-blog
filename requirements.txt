@@ -1,8 +1,10 @@
 asgiref==3.7.2
 beautifulsoup4==4.12.2
 Django==4.2
-django-bootstrap-v5==1.0.11 
-python-decouple==3.8 # Not use decouple yet but i might need it in future if not needed will remove it.
+django-bootstrap-v5==1.0.11
+django-ckeditor==6.7.0
+django-js-asset==2.2.0
+python-decouple==3.8
 python-dotenv==1.0.0
 soupsieve==2.5
 sqlparse==0.4.4
