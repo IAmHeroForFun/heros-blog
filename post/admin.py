@@ -6,15 +6,15 @@ from .forms import BlogPostForm
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
-    prepopulated_fields = {'slug': ('name',)}
+    prepopulated_fields = {'slug': ('name',)} # To auto fill slug while filling the name
 
 @admin.register(Tag)
 class TagAdmin(admin.ModelAdmin):
-        prepopulated_fields = {'slug': ('name',)}
+        prepopulated_fields = {'slug': ('name',)} # To auto fill slug while filling the name
 
 @admin.register(BlogPost)
 class BlogPostAdmin(admin.ModelAdmin):
     list_display = ('title', 'pub_date', 'published')
     list_filter = ('categories', 'tags', 'pub_date', 'published')
     search_fields = ('title', 'content', 'categories__name', 'tags__name')
-    form = BlogPostForm
+    form = BlogPostForm # form imported and implement in admin 

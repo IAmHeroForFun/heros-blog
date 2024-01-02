@@ -42,12 +42,12 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     'bootstrap5', # package
     'ckeditor', # writer package
-    'ckeditor_uploader', 
+    'ckeditor_uploader', # CKEitor Pluggin so far i guess
     'home', # local 
     'post', # local for posts 
 ]
 
-# CKEDITOR
+# CKEDITOR config can customize as users need
 CKEDITOR_CONFIGS = {
     'default': {
         'toolbar': 'Custom',
@@ -58,8 +58,8 @@ CKEDITOR_CONFIGS = {
             ['RemoveFormat', 'Source'],
             ['Image', 'Link', 'UploadImage'],
         ],
-        'width': 700,
-        'height': 300,
+        # 'width': 700, # can control size of the CKEditor from here 
+        # 'height': 300, 
         'extraPlugins': 'uploadimage',
         'uploadUrl': '/ckeditor/upload/',
         'removePlugins': 'stylesheetparser',
