@@ -5,7 +5,7 @@ from .models import BlogPost
 
 class BlogPostForm(forms.ModelForm):
     class Meta:
-        model = BlogPost
-        fields = ['title', 'content', 'categories', 'tags', 'published']
+        model = BlogPost # model from models.py
+        fields = ['title', 'content', 'categories', 'tags', 'published', 'author'] # show needed fields
         
     content = forms.CharField(widget=CKEditorWidget())
