@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+Home
+{% endblock title %}
+
+{% block content %}
+
+
+{% for posts in blogpost %}
+<ul>
+    <li> {{ posts.title }} - {{ posts.pub_date }}</li>
+</ul>
+{% endfor %}    
+
+{% endblock content %}
