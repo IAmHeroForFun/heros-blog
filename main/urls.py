@@ -23,8 +23,10 @@ from ckeditor_uploader import views as ckeditor_views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", include("home.urls", namespace="home")), # homepage
+    path("", include("home.urls", namespace="home")),  # homepage
     # path("", include("post.urls")), # Blog posts
-    path('ckeditor/', include('ckeditor_uploader.urls')), # enables CKEditor to work with
-    path('ckeditor/upload/', ckeditor_views.upload, name='ckeditor_upload'), # gives option for attachments
+    # enables CKEditor to work with
+    path('ckeditor/', include('ckeditor_uploader.urls')),
+    path('ckeditor/upload/', ckeditor_views.upload,
+         name='ckeditor_upload'),  # gives option for attachments
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
