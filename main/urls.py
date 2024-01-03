@@ -23,7 +23,7 @@ from ckeditor_uploader import views as ckeditor_views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", include("home.urls", namespace="home")),  # homepage
+    path("", include("home.urls")),  # homepage
     # path("", include("post.urls")), # Blog posts
     # enables CKEditor to work with
     path('ckeditor/', include('ckeditor_uploader.urls')),
