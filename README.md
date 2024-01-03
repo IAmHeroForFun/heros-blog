@@ -12,7 +12,7 @@
 
 ### Todo
 - [x] **Plan** Wil be updated as i learn and make.
-- [ ] **Front-end** I will be using bootstraps. So my foal is to keep it simple yet responsive on all devices. 
+- [ ] **Front-end** I will be using bootstraps. So my goal is to keep it simple yet responsive on all devices. 
 - [x] **Model** This part is very important, So i will be applying as i Learn.
     - [x] **Post** 
     - [x] **Tags**
