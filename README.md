@@ -13,19 +13,19 @@
 ### Todo
 - [x] **Plan** Wil be updated as i learn and make.
 - [ ] **Front-end** I will be using bootstraps. So my goal is to keep it simple yet responsive on all devices. 
-- [x] **Model** This part is very important, So i will be applying as i Learn.
+- [x] **Model** & **form** This part is very important, So i will be applying as i Learn.
     - [x] **Post** 
     - [x] **Tags**
+    - [x] **contact**
 - [ ] **View & URLS** Once model is setup well, I am pretty sure getting it into front-end from here filtering content and many more stuffs from here will get easier. Might change as i improve my skillz.
 - [ ] **DATABASE** I decided to go with MongoDB because i will be making changes to tables and stuffs and according to my current knowledge mongoDB should do.
 - [ ] **WORK ON DEPLOYMENT** This part will be updated depending on where i am gonna host i will learn lot of database, web server, hosting, domain, etc.
 
 ### Samples so far (I will be changing as i do changes.)
 
-![tags](samples/tags.png) <p>Tags page sample</p>
-![categories](samples/categories.png) <p>Category page sample</p>
-![ckeditor](samples/ckeditor.png) <p>CKeditor page sample</p>
-![post](samples/post.png) 
+![tags](samples/contactmain.png) <p>contact or Feedback form</p>
+![categories](samples/contactfilled.png) <p>after filled</p>
+![ckeditor](samples/showing success.png) <p>after submitted</p>
 
 ### You want to clone the project and try? 
 JUST
