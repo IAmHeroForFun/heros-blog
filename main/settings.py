@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    'crispy_forms',
+    'crispy_bootstrap5',
     'bootstrap5', # package
     'ckeditor', # writer package
     'ckeditor_uploader', # CKEitor Pluggin so far i guess
@@ -47,6 +49,8 @@ INSTALLED_APPS = [
     'post', # local for posts 
 ]
 
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 # CKEDITOR config can customize as users need
 CKEDITOR_CONFIGS = {
     'default': {
