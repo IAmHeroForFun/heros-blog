@@ -6,7 +6,7 @@
 
 ### TOOLS i use
 - Python Django Framework(Web back-end Framework)
-- MongoDB (NoSql Database)
+- MongoDB (NoSql Database) (Haven't even started this part yet.)
 - Bootstraps 5 (front-end)
 - VSCode/Neovim (IDE)
 
@@ -17,6 +17,7 @@
     - [x] **Post** 
     - [x] **Tags**
     - [x] **contact**
+- [ ] **TESTS** Tests is very important part i believe.
 - [ ] **View & URLS** Once model is setup well, I am pretty sure getting it into front-end from here filtering content and many more stuffs from here will get easier. Might change as i improve my skillz.
 - [ ] **DATABASE** I decided to go with MongoDB because i will be making changes to tables and stuffs and according to my current knowledge mongoDB should do.
 - [ ] **WORK ON DEPLOYMENT** This part will be updated depending on where i am gonna host i will learn lot of database, web server, hosting, domain, etc.
