@@ -1,0 +1,45 @@
+{% load static %}
+<form id="search-form" method="get" action="{% url 'home:search_view' %}">
+  <input type="text" id="search-input" name="query" placeholder="Search" />
+  <div id="search-results" class="search-results"></div>
+</form>
+{% comment %} Making with ChatGPT hehehe i mean help so eh ye {% endcomment %}
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+  $(document).ready(function () {
+    var searchInput = $("#search-input");
+    var searchResults = $("#search-results");
+
+    searchInput.on("input", function () {
+      var query = searchInput.val();
+
+      $.ajax({
+        url: $("#search-form").attr("action"),
+        data: { query: query },
+        dataType: "json",
+        success: function (data) {
+          showResults(data.results);
+        },
+      });
+    });
+
+    function showResults(results) {
+      if (results.length > 0) {
+        var dropdown = $("<ul>").addClass("search-dropdown");
+        results.forEach(function (result) {
+          dropdown.append($("<li>").text(result.title));
+        });
+        searchResults.html(dropdown).show();
+      } else {
+        searchResults.hide();
+      }
+    }
+
+    // Close dropdown when clicking outside
+    $(document).on("click", function (event) {
+      if (!$(event.target).closest("#search-results").length) {
+        searchResults.hide();
+      }
+    });
+  });
+</script>
