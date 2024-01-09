@@ -25,7 +25,7 @@
 
 ### Samples so far (I will be changing as i do changes.)
 
-![search](samples/seach.png) <p>Seach field</p>
+![search](samples/search.png) <p>Seach field</p>
 
 
 ### You want to clone the project and try? 
