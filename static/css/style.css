@@ -1,0 +1,38 @@
+/* Add this to your CSS file */
+.search-dropdown {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.search-dropdown li {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.search-dropdown li:hover {
+    background-color: #f2f2f2;
+}
+
+@font-face {
+    font-family: 'Fira Code';
+    src: url('/blog/static/font/woff2/FiraCode-Regular.woff2') format('woff2'),
+         url('/blog/static/font/woff/FiraCode-Regular.woff') format('woff');
+    /* Add more formats if necessary */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+body {
+    font-family: 'Fira Code', monospace;
+  }
+  
+  .navbar,
+  .btn,
+  .form-control {
+    /* Override Bootstrap styles as needed */
+    font-family: 'Fira Code', monospace;
+  }
+  
